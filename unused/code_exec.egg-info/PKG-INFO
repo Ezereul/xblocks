@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: code_exec
+Version: 0.1
+Summary: Code execution XBlock
+Requires-Dist: XBlock
+Requires-Dist: xblock-utils

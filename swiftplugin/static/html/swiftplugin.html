@@ -1,0 +1,76 @@
+<section class="swiftplugin col-md-12">
+    <div class="container">
+        <div class="col-12">
+            <h1 class="mb-2" id="assignment-title">Title</h1>
+            <div id="code-container-area">
+                <ul class="nav nav-pills" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="yoursolution2-tab" data-bs-toggle="tab"
+                                data-bs-target="#yoursolution2"
+                                type="button" role="tab" aria-controls="yoursolution2" aria-selected="true">Your Code
+                        </button>
+                    </li>
+                    <li id="btn-solution" class="nav-item" role="presentation">
+                        <button class="nav-link" id="empowrsolution-tab" data-bs-toggle="tab"
+                                data-bs-target="#empowrsolution" type="button" role="tab" aria-controls="empowrsolution"
+                                aria-selected="false">Solution
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content-wrapper">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="yoursolution2" role="tabpanel"
+                             aria-labelledby="yoursolution2-tab">
+                            <div class="row code-solution-row">
+                                <textarea id="code-area" rows="25"
+                                          class="col-sm-12 col-md-6 col-lg-12"></textarea>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade active" id="empowrsolution" role="tabpanel"
+                             aria-labelledby="empowrsolution-tab">
+                            <div class="row code-solution-row">
+                                <textarea id="code-solution-area" rows="25" class="col-sm-12 col-md-6"
+                                          readonly></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instructions-container">
+                        <div>
+                            <div class="heading-dropdown-wrapper">
+                                <h1 class="mb-2">Instructions</h1>
+                                <div class="dropdown">
+                                    <a class="btn btn-primary dropdown-toggle" id="select-lang-btn" href="#"
+                                       role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                       aria-expanded="false">
+                                        Select Language
+                                    </a>
+                                    <ul id="ul-1" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    </ul>
+                                </div>
+                            </div>
+                            <p id="assigment-instructions-text"></p>
+                            <button type="button" id="run-btn"
+                                    class="btn btn-primary btn-shadow-primary-100"
+                                    data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Assigning. Please Wait">
+                                Run Code
+                            </button>
+                            <button type="button" id="submit-btn"
+                                    class="btn btn-primary btn-shadow-primary-100"
+                                    data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Assigning. Please Wait">
+                                Submit Code
+                            </button>
+                        </div>
+                        <h1 id="response-title" class="mt-2 mb-2">Output</h1>
+                        <div class="code-bottom mb-4">
+                            <div id="response-area">
+                                <p class="response-txt" id="response-txt" readonly></p>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- end container-lg -->
+</section>
+

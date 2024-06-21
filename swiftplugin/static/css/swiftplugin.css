@@ -1,0 +1,194 @@
+/* CSS for SwiftPluginXBlock */
+
+.swiftplugin .nav-tabs .nav-link#yoursolution2-tab,
+.swiftplugin .nav-link#empowrsolution-tab {
+    padding: 8px 16px;
+    color: #9E9E9E !important;
+}
+
+.swiftplugin .code-solution-row {
+    --bs-gutter-x: 0 !important;
+}
+
+.swiftplugin .nav-pills#myTab,
+.swiftplugin .nav-link.active#yoursolution2-tab,
+.swiftplugin .nav-link.active#empowrsolution-tab {
+    background-color: transparent !important;
+    border-radius: 16px 16px 0 0 !important;
+    font-weight: bold;
+    color: #424242 !important;
+}
+
+.swiftplugin .nav-link#yoursolution2-tab,
+.swiftplugin .nav-link#empowrsolution-tab {
+    display: block;
+    padding: .5rem 1rem;
+    /* color: white; */
+    font-weight: 100;
+    color: #424242 !important;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+
+.swiftplugin div#code-container-area {
+    border: 1px;
+    border-style: solid;
+    border-radius: 16px;
+    border-color: rgb(132, 132, 132) !important;
+    height: calc(70vmin + 40px);
+    overflow: hidden;
+}
+
+.swiftplugin .response-txt {
+    color: black;
+    white-space: pre-wrap;
+}
+
+.swiftplugin .code-bottom {
+    background: none;
+    /* height: 30vh; */
+    display: flex;
+    flex-direction: column;
+}
+
+.swiftplugin .tab-pane {
+    min-height: 100px;
+}
+
+.swiftplugin .instructions-container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+.swiftplugin .CodeMirror-wrap {
+    width: 50% !important;
+    border-right: 1px solid #e6e6e6;
+    /* min-height: 600px; */
+    border-radius: 16px 0 0 16px;
+
+}
+
+.swiftplugin .btn-primary#run-btn,
+.swiftplugin .btn-primary#submit-btn {
+    color: #fff !important;
+    background-color: #5c0e81 !important;
+    border-color: #5c0e81 !important;
+}
+
+.swiftplugin .btn-primary#run-btn:hover,
+.swiftplugin .btn-primary#submit-btn:hover {
+    background-color: #7730b0 !important;
+    border-color: #7730b0 !important;
+}
+
+.swiftplugin .btn-primary#select-lang-btn,
+.swiftplugin .btn-primary#submit-btn {
+    color: #fff !important;
+    background-color: #5c0e81 !important;
+    border-color: #5c0e81 !important;
+}
+
+.swiftplugin .btn-primary#select-lang-btn:hover,
+.swiftplugin .btn-primary#submit-btn:hover {
+    background-color: #7730b0 !important;
+    border-color: #7730b0 !important;
+}
+
+.swiftplugin .CodeMirror {
+    height: auto !important;
+}
+
+.swiftplugin .instructions-container,
+.swiftplugin .CodeMirror-wrap {
+    height: 70vmin !important;
+    overflow-y: scroll;
+}
+
+.swiftplugin .heading-dropdown-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.swiftplugin .tab-pane.fade.show.active+.tab-pane.fade.hidden.active {
+    margin-bottom: -70vmin;
+}
+
+.swiftplugin table {
+    background: #fff;
+    border: solid 1px #ddd;
+    margin-bottom: 1.25rem;
+    table-layout: auto;
+}
+
+.swiftplugin table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, table tbody tr td, table tr td {
+    display: table-cell;
+    line-height: 1.125rem;
+}
+
+.swiftplugin table tr th, table tr td {
+    color: #222;
+    font-size: 0.875rem;
+    padding: 0.5625rem 0.625rem;
+    text-align: left;
+}
+
+.swiftplugin code {
+    color: #c7254e !important;
+    background-color: #f9f2f4 !important;
+    border-radius: 4px !important;
+    font-family: monospace, monospace !important;
+    font-size: 0.8em !important;
+    padding: 2px 4px !important;
+}
+
+.swiftplugin .CodeMirror.cm-s-default.CodeMirror-wrap {
+    width: 100% !important;
+}
+
+.swiftplugin .tab-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+    .swiftplugin .CodeMirror-wrap {
+        width: 100% !important;
+        /* min-height: 400px; */
+    }
+
+    .swiftplugin div#code-container-area {
+        /* height:100vh; */
+        overflow: hidden;
+    }
+
+    .swiftplugin div#code-solution-area {
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .swiftplugin .heading-dropdown-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.CodeMirror-line {
+    margin: -1px 20px;
+}
+
+.CodeMirror-gutter,
+.CodeMirror-linenumbers {
+    width: 26px;
+}
+
+.CodeMirror-line {
+    margin: 0px 32px;
+}
+
+.swiftplugin .col-12 {
+    border: none;
+}
